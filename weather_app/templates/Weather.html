@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="search_field">
+      <form method="POST">
+        {% csrf_token %}
+      {{form.name}}
+    </div>
+    <button type="submit" class="button_search_field" >
+      Add City
+    </button>
+    {% if message %}
+    <div class="notification {{ message_class }}">{{message}}</div>
+    {% endif %}
+  
+  </form>
+    {% for city_weather in weather_data %}
+    <div class="container">
+      <!-- <h1>HELLO BOIS</h1>       -->
+      <h3>{{city_weather.city}}</h3>
+      <h1>{{city_weather.temperature}}&deg; C</h1>      
+      <h2>{{city_weather.description}}</h2>
+      <p> humidity: <h1>{{city_weather.humidity}}</h1> </p>
+      <div>
+      <img src="https://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image">
+    </div>
+    <div class="delete_city">
+      <a href="{% url 'delete_city' city_weather.city %}"> <button class="delete">Delete</button> </a>
+    </div>
+    </div>
+    <hr>
+    {% endfor %}
+  </body>
+</html>
