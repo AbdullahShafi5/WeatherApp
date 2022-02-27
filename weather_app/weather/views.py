@@ -25,7 +25,6 @@ def home(request):
                     print(err_msg)
             else:
                 err_msg = 'City Already Exists in the DataBase'
-        # print(request.POST)
         if err_msg:
             message = err_msg
             message_class='is-danger'
