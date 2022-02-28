@@ -26,9 +26,7 @@ SECRET_KEY = 'django-insecure-3km7av@$culomcqii!-13&eq+%7177l!3fefv_$nnwqt+q_rot
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
-# Application definition
+ALLOWED_HOSTS = ['satteliteweather.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'weather'
+    'weather',
 ]
 
 MIDDLEWARE = [
@@ -112,7 +110,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
