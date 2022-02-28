@@ -20,7 +20,7 @@
         <div class="form-field-button">
           <button type="submit" class="button_search_field">
             Add City
-          </button>
+          </button> 
         </div>
       </div>
       <div class="container-message">
@@ -41,10 +41,11 @@
         </div>
         <div class="another-2flex-last">
           <div class="item3 items"><h2>{{city_weather.description}}</h2></div>
-          <div class="item4 items"><p> humidity:<h4>{{city_weather.humidity}}%</h4></div>
+          <div class="item4 items"><p> Humidity:{{city_weather.humidity}}%</div>
+            <div class="item4 items"><p> Wind:{{city_weather.wind}} km/h</div>
           </div>
           <div class="delete_city">
-            <a href="{% url 'delete_city' city_weather.city %}"> <button class="delete">Delete</button> </a>
+            <a href="{% url 'delete_city' city_weather.city %}"><button class="delete">Delete</button></a>
           </div>
         </div>
         <!-- <hr> -->
@@ -52,6 +53,9 @@
       </div>
     </div>
   </div>
+  </div>
+  <div class="courtesy"><p id="damn-coutesy"> Made By </p> 
+    <p class="dancing-courtesy"><a href="https://codingmafia.herokuapp.com/">AbdullaSafi</a></p>
   </div>
 </body>
 </html>

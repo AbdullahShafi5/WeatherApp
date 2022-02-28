@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap'); */
 body{
     background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .item-container{
@@ -38,15 +42,20 @@ body{
 
 .another-2flex-last{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: start!important;
+    margin-left: 10px;
 }
 
 .items{
-    padding: 15px;
+    padding: 4px;
     font-size: 15px;
+    font-weight: 600px;
 }
 
 .delete_city{
+    padding-top: 5px;
     padding-bottom: 10px;
     
 }
@@ -78,6 +87,35 @@ form input{
 .search_field > form{
     margin-top: 30px;
 }
+
 .button_search_field{
     padding:8px;
+}
+
+.item2{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.item1{
+    padding: 5px;
+    font-size: 23px;
+}
+.item4{
+    display: flex;
+    font-size: 20px;
+}
+.courtesy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;    
+    text-align: center;
+    /* font-family: 'Mea Culpa', cursive; */
+}
+.courtesy a {
+    font-size: 25px;
+    color:rgb(22, 83, 252);
+    text-decoration: none;
+    font-family: 'Mea Culpa', cursive;
 }

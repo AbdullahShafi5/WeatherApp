@@ -18,7 +18,7 @@ def home(request):
             existing_city_count = City.objects.filter(name=new_city).count()
             if existing_city_count == 0:
                 r = requests.get(api_id.format(new_city)).json()
-                # print(r)
+                print(r)
                 if r['cod'] == 200:
                     form.save()
                 else:
@@ -44,6 +44,7 @@ def home(request):
             'city':city.name,
             'temperature':math.ceil(r['main']['temp']),
             'humidity':r['main']['humidity'],
+            'wind':math.ceil(r['wind']['speed']),
             'description':r['weather'][0]['description'],
             'icon': r['weather'][0]['icon'],
         } 
