@@ -75,16 +75,18 @@ body{
 }
 
 form input{
-    width: 243px;
+    width: 300px;
     padding: 8px;
     border-radius: 2px;
 }
 
-.form-field-button{
+/* .form-field-button{
     display: inline;
-}
+} */
 
 .search_field > form{
+    display: flex;
+    flex-direction: column!important;
     margin-top: 30px;
 }
 

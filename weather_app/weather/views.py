@@ -61,4 +61,4 @@ def home(request):
 def delete_city(request, city_name):
     City.objects.get(name=city_name).delete()
 
-    return redirect('home')
+    return redirect(request,'home')
