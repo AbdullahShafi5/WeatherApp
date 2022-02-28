@@ -4,6 +4,7 @@ import requests
 from django.shortcuts import redirect, render, redirect
 from .models import City
 from .forms import CityForm
+import math
 def home(request):
     api_id = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=2d6ed05dfaddedb887db0b6fbf06b332'
     err_msg = ''
@@ -41,7 +42,7 @@ def home(request):
 
         city_weather = {
             'city':city.name,
-            'temperature':r['main']['temp'],
+            'temperature':math.ceil(r['main']['temp']),
             'humidity':r['main']['humidity'],
             'description':r['weather'][0]['description'],
             'icon': r['weather'][0]['icon'],

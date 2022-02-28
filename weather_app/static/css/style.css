@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.container-body{
+    margin: auto;
+}
+
+.container-weather-items{
+    width: 300px;
+    height: auto;
+    /* border: 2px solid black; */
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 4px;
+    
+}
+
+.main-weather-flex{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.another-2flex-last{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.delete_city{
+    padding-bottom: 10px;
+    
+}
+.delete{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color:rgb(14, 13, 13);
+    font-weight: 600;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.delete:hover{
+    /* font-size: medium; */
+    color:rgb(231, 0, 0);
+    font-weight: bold;
+    background-color: black;
+}
+
+form input{
+    width: 243px;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.form-field-button{
+    display: inline;
+}
+
+.search_field > form{
+    margin-top: 30px;
+}
+.button_search_field{
+    padding:8px;
+}
