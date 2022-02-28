@@ -75,14 +75,21 @@ body{
 }
 
 form input{
+    text-align: center;
     width: 300px;
     padding: 8px;
     border-radius: 2px;
+    outline-color: #2961fc;
 }
 
-/* .form-field-button{
-    display: inline;
-} */
+.form-field-button{
+    margin-top: 10px;
+}
+.button_search_field:hover{
+    border-radius: 4px;
+    Color:red;
+    background-color: black;
+}
 
 .search_field > form{
     display: flex;
