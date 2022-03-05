@@ -1,5 +1,3 @@
-# from logging import PlaceHolder
-# from tkinter import Widget
 from django.forms import ModelForm ,TextInput
 from .models import City
 
